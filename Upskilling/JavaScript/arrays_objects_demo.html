@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays and Objects</title>
+</head>
+<body>
+
+    <h1>JavaScript Arrays and Objects</h1>
+
+    <div id="arrayOutput"></div>
+    <br>
+    <div id="objectOutput"></div>
+
+    <script>
+        let technologies = ["HTML5", "CSS3", "JavaScript"];
+
+        technologies.push("React");
+        technologies.pop();
+
+        let arrayText = "";
+
+        technologies.forEach(function(item, index) {
+            arrayText += (index + 1) + ". " + item + "<br>";
+        });
+
+        document.getElementById("arrayOutput").innerHTML =
+            "<h2>Array Elements</h2>" + arrayText;
+
+        let student = {
+            name: "Jaswanth",
+            department: "Cyber Security",
+            cgpa: 8.7
+        };
+
+        document.getElementById("objectOutput").innerHTML =
+            "<h2>Student Object</h2>" +
+            "Name: " + student.name + "<br>" +
+            "Department: " + student.department + "<br>" +
+            "CGPA: " + student.cgpa;
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

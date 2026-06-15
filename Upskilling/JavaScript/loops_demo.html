@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loops Demo</title>
+</head>
+<body>
+
+    <h1>JavaScript Loops</h1>
+
+    <h2>For Loop Output</h2>
+    <div id="forLoop"></div>
+
+    <h2>While Loop Output</h2>
+    <div id="whileLoop"></div>
+
+    <script>
+        let forResult = "";
+
+        for (let i = 1; i <= 10; i++) {
+            if (i === 5) {
+                continue;
+            }
+
+            if (i === 9) {
+                break;
+            }
+
+            forResult += i + " ";
+        }
+
+        document.getElementById("forLoop").innerHTML =
+            "Numbers: " + forResult;
+
+        let count = 1;
+        let whileResult = "";
+
+        while (count <= 5) {
+            whileResult += count + " ";
+            count++;
+        }
+
+        document.getElementById("whileLoop").innerHTML =
+            "Numbers: " + whileResult;
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

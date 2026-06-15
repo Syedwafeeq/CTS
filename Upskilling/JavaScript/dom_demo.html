@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+</head>
+<body>
+
+    <h1>JavaScript DOM Manipulation</h1>
+
+    <p id="message">
+        Click the button to update this text.
+    </p>
+
+    <button onclick="changeMessage()">
+        Update Message
+    </button>
+
+    <script>
+        function changeMessage() {
+            document.getElementById("message").innerHTML =
+                "Welcome to JavaScript DOM Manipulation!";
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

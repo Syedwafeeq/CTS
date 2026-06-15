@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Features Demo</title>
+</head>
+<body>
+
+    <h1>JavaScript ES6 Features</h1>
+
+    <div id="output"></div>
+
+    <script>
+        const student = {
+            name: "Jaswanth",
+            department: "Cyber Security"
+        };
+
+        const { name, department } = student;
+
+        const skills = ["HTML5", "CSS3"];
+        const updatedSkills = [...skills, "JavaScript", "React"];
+
+        const greet = (user) => `Welcome, ${user}!`;
+
+        document.getElementById("output").innerHTML =
+            `Name: ${name}<br>
+             Department: ${department}<br>
+             Skills: ${updatedSkills.join(", ")}<br>
+             ${greet(name)}`;
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

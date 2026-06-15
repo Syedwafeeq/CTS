@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Effects Demo</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h1>jQuery Effects</h1>
+
+    <p id="content">
+        jQuery provides several effects to create interactive web pages.
+    </p>
+
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="toggleBtn">Toggle</button>
+    <button id="fadeOutBtn">Fade Out</button>
+    <button id="fadeInBtn">Fade In</button>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#hideBtn").click(function () {
+                $("#content").hide();
+            });
+
+            $("#showBtn").click(function () {
+                $("#content").show();
+            });
+
+            $("#toggleBtn").click(function () {
+                $("#content").toggle();
+            });
+
+            $("#fadeOutBtn").click(function () {
+                $("#content").fadeOut();
+            });
+
+            $("#fadeInBtn").click(function () {
+                $("#content").fadeIn();
+            });
+
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

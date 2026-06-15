@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Demo</title>
+</head>
+<body>
+
+    <h1>Local Storage Demo</h1>
+
+    <input type="text" id="username" placeholder="Enter your name">
+
+    <button onclick="saveData()">Save</button>
+    <button onclick="showData()">Show</button>
+    <button onclick="clearData()">Clear</button>
+
+    <p id="output"></p>
+
+    <script>
+        function saveData() {
+            let name = document.getElementById("username").value;
+            localStorage.setItem("user", name);
+            alert("Data saved successfully.");
+        }
+
+        function showData() {
+            let storedName = localStorage.getItem("user");
+
+            if (storedName) {
+                document.getElementById("output").innerText =
+                    "Stored User: " + storedName;
+            } else {
+                document.getElementById("output").innerText =
+                    "No data found.";
+            }
+        }
+
+        function clearData() {
+            localStorage.removeItem("user");
+            document.getElementById("output").innerText =
+                "Storage cleared.";
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Await Demo</title>
+</head>
+<body>
+
+    <h1>JavaScript Async/Await</h1>
+
+    <button onclick="displayMessage()">
+        Load Message
+    </button>
+
+    <p id="output"></p>
+
+    <script>
+        function fetchMessage() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Data loaded successfully!");
+                }, 2000);
+            });
+        }
+
+        async function displayMessage() {
+            document.getElementById("output").innerHTML =
+                "Loading...";
+
+            const result = await fetchMessage();
+
+            document.getElementById("output").innerHTML =
+                result;
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demo</title>
+
+    <style>
+        .box {
+            width: 300px;
+            padding: 20px;
+            border: 3px solid black;
+            margin: 30px;
+            outline: 2px dashed gray;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .removed {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <div class="box">
+        This box demonstrates margin, padding, border, and outline.
+    </div>
+
+    <p class="hidden">
+        This text uses visibility: hidden.
+    </p>
+
+    <p class="removed">
+        This text uses display: none.
+    </p>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

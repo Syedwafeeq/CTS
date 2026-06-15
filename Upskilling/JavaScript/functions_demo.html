@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions Demo</title>
+</head>
+<body>
+
+    <h1>JavaScript Functions</h1>
+
+    <div id="output"></div>
+
+    <script>
+        function calculateSquare(number) {
+            return number * number;
+        }
+
+        const greetUser = (name) => {
+            return "Welcome, " + name + "!";
+        };
+
+        let square = calculateSquare(8);
+        let message = greetUser("Jaswanth");
+
+        document.getElementById("output").innerHTML =
+            "Square of 8: " + square + "<br>" +
+            message;
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

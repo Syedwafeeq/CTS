@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery DOM Manipulation</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h1>jQuery DOM Manipulation</h1>
+
+    <div id="content">
+        <p>Welcome to jQuery.</p>
+    </div>
+
+    <button id="changeBtn">Change Content</button>
+    <button id="appendBtn">Append Text</button>
+    <button id="prependBtn">Prepend Text</button>
+    <button id="styleBtn">Apply Style</button>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#changeBtn").click(function () {
+                $("#content").html(
+                    "<p>Content updated using jQuery.</p>"
+                );
+            });
+
+            $("#appendBtn").click(function () {
+                $("#content").append(
+                    "<p>New paragraph added at the end.</p>"
+                );
+            });
+
+            $("#prependBtn").click(function () {
+                $("#content").prepend(
+                    "<p>New paragraph added at the beginning.</p>"
+                );
+            });
+
+            $("#styleBtn").click(function () {
+                $("#content").css({
+                    "color": "blue",
+                    "font-weight": "bold",
+                    "border": "2px solid black",
+                    "padding": "10px"
+                });
+            });
+
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

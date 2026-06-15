@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selectors Demo</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h1>jQuery Selectors</h1>
+
+    <p id="message">
+        Click the button to modify this text.
+    </p>
+
+    <button id="changeBtn">
+        Change Text
+    </button>
+
+    <script>
+        $(document).ready(function () {
+            $("#changeBtn").click(function () {
+                $("#message").text(
+                    "Text updated using jQuery."
+                );
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

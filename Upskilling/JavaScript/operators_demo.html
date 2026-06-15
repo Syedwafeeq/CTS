@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators Demo</title>
+</head>
+<body>
+
+    <h1>JavaScript Operators and Conditions</h1>
+
+    <div id="output"></div>
+
+    <script>
+        let marks = 85;
+        let attendance = 92;
+
+        let sum = marks + 5;
+        let eligible = (marks >= 40) && (attendance >= 75);
+
+        let result;
+
+        if (eligible) {
+            result = "Student is eligible for certification.";
+        } else {
+            result = "Student is not eligible for certification.";
+        }
+
+        document.getElementById("output").innerHTML =
+            "Marks: " + marks + "<br>" +
+            "Attendance: " + attendance + "%<br>" +
+            "Updated Marks: " + sum + "<br>" +
+            result;
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

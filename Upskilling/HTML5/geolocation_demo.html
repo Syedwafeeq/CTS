@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation Demo</title>
+</head>
+<body>
+
+    <h1>HTML5 Geolocation API</h1>
+
+    <button onclick="getLocation()">
+        Get Current Location
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    showPosition,
+                    showError
+                );
+            } else {
+                document.getElementById("result").innerText =
+                    "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            document.getElementById("result").innerHTML =
+                "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    document.getElementById("result").innerText =
+                        "Location access denied.";
+                    break;
+
+                case error.POSITION_UNAVAILABLE:
+                    document.getElementById("result").innerText =
+                        "Location information unavailable.";
+                    break;
+
+                case error.TIMEOUT:
+                    document.getElementById("result").innerText =
+                        "Location request timed out.";
+                    break;
+
+                default:
+                    document.getElementById("result").innerText =
+                        "An unknown error occurred.";
+            }
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

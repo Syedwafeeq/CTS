@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 20px;
+            border: 2px solid #333;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            body {
+                background-color: #f5f5f5;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Responsive Web Design</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>HTML5</h2>
+            <p>Structure of web pages.</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS3</h2>
+            <p>Styling and layouts.</p>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>Interactive web applications.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>

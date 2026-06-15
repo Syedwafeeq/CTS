@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables Demo</title>
+</head>
+<body>
+
+    <h1>JavaScript Variables and Data Types</h1>
+
+    <div id="output"></div>
+
+    <script>
+        let studentName = "Jaswanth";
+        const course = "Cyber Security";
+        let age = 21;
+        let cgpa = 8.1;
+        let isPlaced = false;
+
+        let message = `
+            Name: ${studentName}<br>
+            Course: ${course}<br>
+            Age: ${age}<br>
+            CGPA: ${cgpa}<br>
+            Placed: ${isPlaced}
+        `;
+
+        document.getElementById("output").innerHTML = message;
+    </script>
+
+    <footer>
+        <p>&copy; 2026 CH Jaswanth</p>
+    </footer>
+
+</body>
+</html>
