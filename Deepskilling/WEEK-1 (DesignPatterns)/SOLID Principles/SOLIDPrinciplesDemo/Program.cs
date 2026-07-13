@@ -1,5 +1,6 @@
 ﻿using SOLIDPrinciplesDemo.SRP;
 using SOLIDPrinciplesDemo.OCP;
+using SOLIDPrinciplesDemo.LSP;
 
 Console.WriteLine("========================================");
 Console.WriteLine(" SOLID Principles - .NET 8");
@@ -16,3 +17,11 @@ Console.WriteLine(" Open Closed Principle (OCP)");
 Console.WriteLine("========================================");
 
 OCPDemo.Run();
+
+Console.WriteLine();
+
+Console.WriteLine("========================================");
+Console.WriteLine(" Liskov Substitution Principle (LSP)");
+Console.WriteLine("========================================");
+
+LSPDemo.Run();
