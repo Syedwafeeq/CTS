@@ -2,6 +2,7 @@
 using SOLIDPrinciplesDemo.OCP;
 using SOLIDPrinciplesDemo.LSP;
 using SOLIDPrinciplesDemo.ISP;
+using SOLIDPrinciplesDemo.DIP;
 
 Console.WriteLine("========================================");
 Console.WriteLine(" SOLID Principles - .NET 8");
@@ -34,3 +35,11 @@ Console.WriteLine(" Interface Segregation Principle (ISP)");
 Console.WriteLine("========================================");
 
 ISPDemo.Run();
+
+Console.WriteLine();
+
+Console.WriteLine("========================================");
+Console.WriteLine(" Dependency Inversion Principle (DIP)");
+Console.WriteLine("========================================");
+
+DIPDemo.Run();
