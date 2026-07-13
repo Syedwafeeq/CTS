@@ -1,40 +1,7 @@
-\# SOLID Principles
+## Progress
 
-
-
-This module contains the implementation of all five SOLID principles using C# and .NET 8.
-
-
-
-\## Principles
-
-
-
-\- \[ ] SRP
-
-\- \[ ] OCP
-
-\- \[ ] LSP
-
-\- \[ ] ISP
-
-\- \[ ] DIP
-
-
-
-\## Project
-
-
-
-SOLIDPrinciples.sln
-
-
-
-```
-
-SOLIDPrinciplesDemo
-
-```
-
-
-
+- ✅ Single Responsibility Principle
+- ✅ Open/Closed Principle
+- ⏳ Liskov Substitution Principle
+- ⏳ Interface Segregation Principle
+- ⏳ Dependency Inversion Principle
