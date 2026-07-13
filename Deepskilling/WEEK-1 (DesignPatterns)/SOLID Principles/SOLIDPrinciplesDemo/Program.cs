@@ -1,6 +1,7 @@
 ﻿using SOLIDPrinciplesDemo.SRP;
 using SOLIDPrinciplesDemo.OCP;
 using SOLIDPrinciplesDemo.LSP;
+using SOLIDPrinciplesDemo.ISP;
 
 Console.WriteLine("========================================");
 Console.WriteLine(" SOLID Principles - .NET 8");
@@ -25,3 +26,11 @@ Console.WriteLine(" Liskov Substitution Principle (LSP)");
 Console.WriteLine("========================================");
 
 LSPDemo.Run();
+
+Console.WriteLine();
+
+Console.WriteLine("========================================");
+Console.WriteLine(" Interface Segregation Principle (ISP)");
+Console.WriteLine("========================================");
+
+ISPDemo.Run();
